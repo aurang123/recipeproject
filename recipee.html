@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Finder</title>
+    <!-- Add Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+    <!-- Header -->
+    <header class="text-center p-5 bg-primary text-white">
+        <h1>Recipe Finder</h1>
+        <p class="lead">Discover and explore a world of delicious recipes</p>
+    </header>
+
+    <!-- Search Bar -->
+    <section class="search-bar text-center py-5">
+        <div class="container">
+            <div class="input-group mb-3">
+                <input type="text" id="recipe-search" class="form-control" placeholder="Search for recipes..." aria-label="Search for recipes">
+                <div class="input-group-append">
+                    <button id="search-button" class="btn btn-primary">Search</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results Section (Initially Hidden) -->
+    <section class="results" style="display: none;">
+        <div class="container">
+            <h2 class="text-center mb-4">Search Results</h2>
+            <div class="row" id="recipe-list">
+                <!-- Recipe Cards will be displayed here -->
+            </div>
+            <div class="text-center" id="result-message">
+                <!-- Display "Recipe Results" or "No Recipes Found" message here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2023 Recipe Finder. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Add your JavaScript for search functionality here -->
+    <script src="script.js"></script>
+
+    <!-- Add Bootstrap JS and Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
